@@ -1,6 +1,6 @@
-FROM ubuntu:14.04
+FROM ubuntu:20.04
 
-MAINTAINER TuRzAm
+MAINTAINER gear0
 
 # Var for first config
 # Server Name
@@ -12,13 +12,13 @@ ENV SERVERPASSWORD ""
 # Admin password
 ENV ADMINPASSWORD "adminpassword"
 # Nb Players
-ENV NBPLAYERS 70
+ENV NBPLAYERS 10
 # If the server is updating when start with docker start
 ENV UPDATEONSTART 1
 # if the server is backup when start with docker start
 ENV BACKUPONSTART 1
 #  Tag on github for ark server tools
-ENV GIT_TAG v1.5
+ENV GIT_TAG v1.6.58
 # Server PORT (you can't remap with docker, it doesn't work)
 ENV SERVERPORT 27015
 # Steam port (you can't remap with docker, it doesn't work)
